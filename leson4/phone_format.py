@@ -6,3 +6,13 @@
     Если цифр в номере недостаточно, чтобы описать номер в нужном формате -
     попросить пользователя повторить ввод.
 """
+while True:
+    phone_num = input('Enter phone number: ')
+    for char in phone_num:
+        if not char.isdigit():
+            phone_num = phone_num.replace(char, '')  # удаляем лишние символы
+    if phone_num[-10] == '0':  # ecли 10й символ с конца 0, значит колличество цифр верное
+        break
+
+phone_num = '38' + phone_num[-10::]
+print(phone_num)
