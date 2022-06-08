@@ -11,8 +11,15 @@ while True:
     for char in phone_num:
         if not char.isdigit():
             phone_num = phone_num.replace(char, '')  # удаляем лишние символы
+    if len(phone_num) < 10:
+        print("Короткий номер!")
+        continue
     if phone_num[-10] == '0':  # ecли 10й символ с конца 0, значит колличество цифр верное
         break
+    else:
+        print('Неверный формат')
 
 phone_num = '38' + phone_num[-10::]
 print(phone_num)
+
+
