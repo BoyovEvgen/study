@@ -8,9 +8,13 @@
 
 
 def is_lucky(ticket_num):
-    ticket_num = list(ticket_num)
-    center = len(ticket_num) // 2
-    return sum(ticket_num[:center]) == sum(ticket_num[center:])
+    num = []
+    for char in str(ticket_num):
+        num.append(int(char))
+    if len(num) % 2 != 0:
+        return False
+    center = len(num) // 2
+    return sum(num[:center]) == sum(num[center:])
 #    lt = len(ticket_num)
 #    a = b = 0
 #    for i in range(lt):
@@ -30,7 +34,7 @@ assert is_lucky(2020) is True
 assert is_lucky(199999) is False
 assert is_lucky(77) is True
 assert is_lucky(479974) is True
-assert is_lucky(4799731) is False
+assert is_lucky(4700731) is False
 
 
 print("All tests passed successfully!")
