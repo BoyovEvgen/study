@@ -16,5 +16,11 @@
         "games": 2,
         "record": 7,
         "avg_attempts": 7.5
+    },
+    {
+        "name": "Ivan",
+        "games": 4,
+        "record": 6,
+        "avg_attempts": 11.25
     }
 ]
