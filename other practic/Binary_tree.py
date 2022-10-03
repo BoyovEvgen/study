@@ -13,7 +13,7 @@ class Node:
                     self.left.insert(data)
             elif data > self.data:
                 if self.right is None:
-                    self.right = Node(data)
+                    self.right = Node(data)+
                 else:
                     self.right.insert(data)
         else:

@@ -45,17 +45,19 @@ class Rectangle:
     @property
     def a(self):
         return self.__a
+
     @property
     def b(self):
         return self.__b
 
     @a.setter
-    def a (self, value):
-        if value > 0 and type(value)==int:
+    def a(self, value):
+        if value > 0 and type(value) == int:
             self.__a = value
+
     @b.setter
     def b (self, value):
-        if value > 0 and type(value)==int:
+        if value > 0 and type(value) == int:
             self.__b = value
 
 rect = Rectangle(10, 5)
@@ -87,8 +89,8 @@ while True:
 ##        return gepatenusa + katet1 + katet2
 ##
 ##while True:
-##    a = int(input("Введите первый катет треугольника, для выода введите '0': "))
-##    b = int(input("Введите второй катет треугольника, для выода введите '0': "))
+##    a = int(input("Введите первый катет треугольника, для выхода введите '0': "))
+##    b = int(input("Введите второй катет треугольника, для выхода введите '0': "))
 ##    if a == 0 or b == 0:
 ##        break
 ##    else:
